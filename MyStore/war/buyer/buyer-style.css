@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.form-label 
+{
+	color: white;
+	font-family: 'Lucida Grande';
+	font-size: 11px;
+	text-align: right;
+}
