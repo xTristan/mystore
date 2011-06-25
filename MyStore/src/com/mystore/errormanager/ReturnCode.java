@@ -1,0 +1,10 @@
+package com.mystore.errormanager;
+
+public enum ReturnCode {
+	SUCCESS,
+	OPERATION_UNSUPPORTED,
+	VALUE_NULL_OR_EMPTY,
+	VALUE_DUPLICATE,
+	VALUE_INVALID,
+	TRANSACTION_COMMIT_FAILURE
+}

@@ -12,4 +12,14 @@
        <property name="javax.jdo.option.RetainValues" value="true"/>
        <property name="datanucleus.appengine.autoCreateDatastoreTxns" value="true"/>
    </persistence-manager-factory>
+   
+   <persistence-manager-factory name="transactional-write">
+       <property name="javax.jdo.PersistenceManagerFactoryClass"
+           value="org.datanucleus.store.appengine.jdo.DatastoreJDOPersistenceManagerFactory"/>
+       <property name="javax.jdo.option.ConnectionURL" value="appengine"/>
+       <property name="javax.jdo.option.NontransactionalRead" value="true"/>
+       <property name="javax.jdo.option.NontransactionalWrite" value="false"/>
+       <property name="javax.jdo.option.RetainValues" value="true"/>
+       <property name="datanucleus.appengine.autoCreateDatastoreTxns" value="true"/>
+   </persistence-manager-factory>
 </jdoconfig>

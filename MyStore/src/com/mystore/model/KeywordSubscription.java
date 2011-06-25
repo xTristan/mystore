@@ -23,6 +23,8 @@ public class KeywordSubscription {
 		this.subscriber = subscriber;
 		this.keyword = keyword;
 	}
+	
+	public Key getKey() { return key; }
 
 	public String getKeyword() {
 		return keyword;
