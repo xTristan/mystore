@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML>
 <!-- The HTML 4.01 Transitional DOCTYPE declaration-->
 <!-- above set at the top of the file will set     -->
 <!-- the browser's rendering engine into           -->
@@ -12,29 +12,38 @@
     <script type="text/javascript" src="jquery-ui/js/jquery.min.js"></script>
 	<script type="text/javascript" src="jquery-ui/js/jquery-ui.min.js"></script>
 	<link type="text/css" href="jquery-ui/css/dark-hive/jquery-ui-1.8.13.custom.css" rel="stylesheet" />	
-    
-    <title>Hello App Engine</title>
+    <link type="text/css" href="styles/home.css" rel="stylesheet" />
+    <title>Welcome to MyStore</title>
   </head>
 
   <body>
-    <h1>Hello App Engine!</h1>
-	
-    <table>
-      <tr>
-        <td colspan="2" style="font-weight:bold;">Available Servlets:</td>        
-      </tr>
-      <tr>
-        <td><a href="mystore">MyStore</a></td>
-      </tr>
-      <tr>
-      	<td><a href="buyer/home.jsp">Buyer</a></td>
-      </tr>
-      <tr>
-      	<td><a href="seller/home.jsp">Seller</a></td>
-      </tr>
-      <tr>
-      	<td><a href="login/signup">Sign Up</a></td>
-      </tr>
-    </table>
+    <header>
+    <div>
+      <div class="horizontal-layout-div">
+      	<h3 style="font-family:'lucida grande'">My Store</h3>
+      </div>
+      <div style="">
+	      <div class="horizontal-layout-div">
+	      	<label>Name</label><br/>
+	      	<input type="text" name="nameTextInput"/><br/>
+	      	<a href="signup.jsp">New User</a> 
+	      </div>
+	      <div>
+	      	<label>Email</label><br/>
+	      	<input type="text" name="emailTextInput"/><input type="button" value="Log In" style="margin-left:5px"><br/>
+	      	<a href="reset.jsp">Forget Your Password?</a> 
+	      </div>
+      </div>
+    </div>
+    <hr/>
+    </header>
+    <p>
+    	
+    </p>
+    
+    <footer>
+    
+    	<label>we are awesome.</label>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+/* element styles */
+Body {
+	font-family:'lucida grande'
+}
+
+div > a {
+	font-size:12px;
+	margin-left:2px;
+}
+
+div > input {
+	margin-right:5px;
+}
+
+div > label {
+	font-size:13px;
+	margin-left:2px;
+}
+
+footer {
+	font-size:12px;
+}
+
+/* styles by classes */
+.horizontal-layout-div {
+	float:left;
+	margin-right:5px;
+}
+
+/* styles by id */
+
+
+ 
+	

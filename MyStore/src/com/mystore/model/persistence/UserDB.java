@@ -12,7 +12,7 @@ import com.mystore.errormanager.ReturnCode;
 
 public class UserDB {
 	public static ErrorEntry insert(User user) {
-		if (isNameUnique(user))
+		if (isExistingUser(user))
 			return PersistenceManagerFactoryHelper.makePersistentInTransaction(user);
 		else 
 			return new ErrorEntry("name", ReturnCode.VALUE_DUPLICATE);
@@ -26,7 +26,7 @@ public class UserDB {
 		return null;
 	}
 	
-	public static boolean isNameUnique(User user) {
+	public static boolean isExistingUser(User user) {
 		PersistenceManager pmInstance = PersistenceManagerFactoryHelper.getDefaultInstance().getPersistenceManager();
 
 		Query uniquenessQuery = pmInstance.newQuery(User.class);
