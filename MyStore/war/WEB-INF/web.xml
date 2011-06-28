@@ -4,14 +4,14 @@ xmlns="http://java.sun.com/xml/ns/javaee"
 xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
-	<servlet>
+<!-- 	<servlet>
 		<servlet-name>MyStore</servlet-name>
 		<servlet-class>com.mystore.MyStoreServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>MyStore</servlet-name>
 		<url-pattern>/mystore</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 	<servlet>
 		<servlet-name>RequestReceiverService</servlet-name>
 		<servlet-class>com.mystore.RequestReceiverServiceServlet</servlet-class>
@@ -52,6 +52,14 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>LoginService</servlet-name>
 		<url-pattern>/login/*</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>BuyerController</servlet-name>
+		<servlet-class>com.mystore.buyer.ControllerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuyerController</servlet-name>
+		<url-pattern>/buyer</url-pattern>
+	</servlet-mapping>	
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
