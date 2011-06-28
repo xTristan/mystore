@@ -39,10 +39,7 @@
 					<br/>
 					<div style="margin-top:2px">
 						<a class="ui-state-default ui-corner-all button-like" href=<%=userService.createLoginURL(request.getRequestURI())%>>Login</a>
-					</div>					
-					<!-- <button type="button" class="ui-button ui-widget ui-state-default ui-corner-all">
-						<span class="ui-button-text">Login</span>
-					</button> -->
+					</div>
 				</div>
 			</div>
 		<%
